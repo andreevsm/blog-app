@@ -5,10 +5,11 @@ module.exports = {
   purge: ['./src/**/*.jsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      blue: '#5469C9',
+    extend: {
+      colors: {
+        blue: '#5469C9',
+      },
     },
-    extend: {},
   },
   variants: {
     extend: {},
