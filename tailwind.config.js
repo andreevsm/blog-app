@@ -1,5 +1,3 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
   // TODO: Add purge for optimization
   purge: ['./src/**/*.jsx'],
@@ -8,6 +6,9 @@ module.exports = {
     extend: {
       colors: {
         blue: '#5469C9',
+      },
+      width: {
+        192: '48rem',
       },
     },
   },

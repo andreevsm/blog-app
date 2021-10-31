@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { LINKS } from '../constants/links';
 
 const Header = () => (
-  <header className="bg-blue fixed left-0 top-0 h-screen w-52 text-white text-center">
+  <header className="bg-blue fixed left-0 top-0 h-screen w-80 text-white text-center">
     <h1 className="text-xl font-bold pt-6">Sergey's blog</h1>
 
     <nav className="flex items-center flex-col px-4 py-8">

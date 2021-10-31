@@ -8,9 +8,9 @@ import Header from '../components/header';
 const MainLayout = ({ title, description, children }) => (
   <>
     <SEO title={title} description={description} />
-    <div className="grid grid-cols-6 h-screen bg-white">
+    <div className="h-screen bg-white">
       <Header />
-      <main className="col-span-5">{children}</main>
+      <main className="ml-16">{children}</main>
     </div>
   </>
 );
