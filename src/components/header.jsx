@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import Avatar from '../assets/images/avatar.png';
 
 import { LINKS } from '../constants/links';
 
@@ -10,7 +11,7 @@ const Header = () => (
     <nav className="flex items-center flex-col px-4 py-8">
       <div>
         <div>
-          <img className="max-w-lg rounded-lg mb-4" alt="Avatar" />
+          <img src={Avatar} alt="Sergey'blog Avatar" className="w-40 h-40 rounded-full mb-4 mx-auto object-cover" />
           <div className="text-sm mb-4">
             Hi, my name is Sergey Andreev. Briefly introduce yourself here. You can also provide a link to the about page.
             <br />
