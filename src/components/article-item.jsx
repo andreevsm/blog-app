@@ -1,6 +1,7 @@
 import * as React from 'react';
-
 import { Link } from 'gatsby';
+
+import Avatar from '../assets/images/avatar.png';
 
 const ArticleItem = ({
   title,
@@ -10,18 +11,23 @@ const ArticleItem = ({
   imageUrl,
   url,
 }) => (
-  <div>
-    <div>
-      <img src={imageUrl} alt={title} />
+  <div className="flex">
+    <div className="w-1/4">
+      <img className="rounded-sm w-40" src={Avatar} alt={title} />
     </div>
-    <div>
-      <h3>{title}</h3>
-      <div>
-        {/* <span>{createdDate}</span>
-        <span>{timeToRead}</span> */}
+    <div className="flex-1">
+      <h3 className="mb-1 text-lg font-bold">{title}</h3>
+      <div className="mb-1 text-xs text-gray-300">
+        <span className="mr-2">{createdDate}</span>
+        |
+        <span className="ml-2">
+          {timeToRead}
+          {' '}
+          min read
+        </span>
       </div>
-      <div>{description}</div>
-      <Link to={url}>Read more</Link>
+      <div className="text-sm">{`${description.slice(0, 140)}...`}</div>
+      <Link className="text-blue" to={url}>Read more</Link>
     </div>
   </div>
 );
