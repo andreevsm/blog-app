@@ -8,7 +8,7 @@ const ArticleItem = ({
   createdDate,
   timeToRead,
   description,
-  imageUrl,
+  // imageUrl,
   url,
 }) => (
   <div className="flex">
