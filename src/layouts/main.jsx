@@ -10,7 +10,7 @@ const MainLayout = ({ title, description, children }) => (
     <SEO title={title} description={description} />
     <div className="h-screen bg-white">
       <Header />
-      <main className="ml-16">{children}</main>
+      <main className="ml-80">{children}</main>
     </div>
   </>
 );

@@ -5,6 +5,6 @@ export const LINKS = [
   },
   {
     url: '/about',
-    name: 'About',
+    name: 'About Me',
   },
 ];
