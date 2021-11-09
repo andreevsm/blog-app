@@ -9,14 +9,26 @@ const Template = ({ data }) => {
 
   return (
     <MainLayout title={frontmatter.title} description={frontmatter.description}>
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
-      <h3>{frontmatter.description}</h3>
+      <article className="p-12">
+        <div className="mx-auto px-3 w-192">
+          <header>
+            <h2 className="text-4xl font-bold mb-4">{frontmatter.title}</h2>
+            <div className="mb-4 color-gray text-sm">
+              <span>Published 2 days ago</span>
+              <span>5 min read</span>
+            </div>
+          </header>
+          <h2>{frontmatter.date}</h2>
+          <h3>{frontmatter.description}</h3>
 
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+
+        </div>
+
+      </article>
     </MainLayout>
   );
 };
