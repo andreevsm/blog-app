@@ -13,10 +13,12 @@ const Header = () => (
         <div>
           <img src={Avatar} alt="Sergey'blog Avatar" className="w-40 h-40 rounded-full mb-4 mx-auto object-cover" />
           <div className="text-sm mb-4">
-            Hi, my name is Sergey Andreev. Briefly introduce yourself here. You can also provide a link to the about page.
+            У меня почти 5 лет опыта во frontend'е.
+            За это время накопил много опыта, которым хотелось бы поделиться с вами.
+            Подробнее обо мне можно прочесть по ссылке ниже.
             <br />
 
-            <Link to="/about">Find out more about me</Link>
+            <Link to="/about">Обо мне</Link>
           </div>
         </div>
         <ul>

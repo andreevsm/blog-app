@@ -14,11 +14,14 @@ const Template = ({ data }) => {
           <header>
             <h2 className="text-4xl font-bold mb-4">{frontmatter.title}</h2>
             <div className="mb-4 color-gray text-sm">
-              <span>Published 2 days ago</span>
-              <span>5 min read</span>
+              <span>
+                Published
+                {' '}
+                {frontmatter.date}
+              </span>
+              <span className="ml-1">| 5 min read</span>
             </div>
           </header>
-          <h2>{frontmatter.date}</h2>
           <h3>{frontmatter.description}</h3>
 
           <div
