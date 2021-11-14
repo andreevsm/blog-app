@@ -16,7 +16,9 @@ const ArticleItem = ({
       <img className="rounded-sm w-40" src={Avatar} alt={title} />
     </div>
     <div className="flex-1">
-      <h3 className="mb-1 text-lg font-bold">{title}</h3>
+      <h3 className="mb-1 text-lg font-bold">
+        <Link to={url}>{title}</Link>
+      </h3>
       <div className="mb-1 text-xs text-gray-300">
         <span className="mr-2">{createdDate}</span>
         |

@@ -23,7 +23,7 @@ const Header = () => (
             Подробнее обо мне можно прочесть по ссылке ниже.
             <br />
 
-            <Link to="/about">Обо мне</Link>
+            <Link className="underline" to="/about">Обо мне</Link>
           </div>
         </div>
         <ul className="py-4">
