@@ -10,7 +10,7 @@ import Avatar from '../assets/images/avatar.png';
 import { LINKS } from '../constants/links';
 
 const Header = () => (
-  <header className="bg-blue fixed left-0 top-0 h-screen w-80 text-white text-center">
+  <header className="bg-blue fixed left-0 top-0 h-screen w-72 text-white text-center">
     <h1 className="text-xl font-bold pt-6">Sergey's blog</h1>
 
     <nav className="flex items-center flex-col px-4 py-8">
@@ -50,7 +50,7 @@ const Header = () => (
       <ul className="text-left">
         {LINKS.map((link) => (
           <li key={link.name}>
-            <Link className="p-2" to={link.url}>{link.name}</Link>
+            <Link activeClassName="text-gray-300 font-bold" className="py-1 block" to={link.url}>{link.name}</Link>
           </li>
         ))}
       </ul>

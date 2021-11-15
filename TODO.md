@@ -1,4 +1,3 @@
 # TODO
 
-1. Add avatar
-2. Add description
+1. Add description
