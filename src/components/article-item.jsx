@@ -19,7 +19,7 @@ const ArticleItem = ({
       <h3 className="mb-1 text-lg font-bold">
         <Link to={url}>{title}</Link>
       </h3>
-      <div className="mb-1 text-xs text-gray-300">
+      <div className="mb-1 text-xs text-gray-400">
         <span className="mr-2">{createdDate}</span>
         |
         <span className="ml-2">
