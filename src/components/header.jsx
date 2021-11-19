@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import {
-  FaStackOverflow, FaGithub, FaLinkedinIn,
+  FaStackOverflow, FaGithub, FaLinkedinIn, FaBars,
 } from 'react-icons/fa';
 
 import Avatar from '../assets/images/avatar.png';
@@ -10,11 +10,14 @@ import Avatar from '../assets/images/avatar.png';
 import { LINKS } from '../constants/links';
 
 const Header = () => (
-  <header className="bg-blue fixed left-0 top-0 h-screen w-72 text-white text-center">
-    <h1 className="text-xl font-bold pt-6">Sergey's blog</h1>
+  <header className="bg-blue left-0 top-0 text-white text-center static w-auto h-auto lg:fixed lg:h-screen lg:w-72 flex lg:block">
+    <h1 className="text-2xl font-bold absolute lg:relative w-full lg:w-auto left-0 top-6">Sergey's blog</h1>
 
     <nav className="flex items-center flex-col px-4 py-8">
-      <div>
+      <button type="button" className="pl-2 lg:hidden">
+        <FaBars size="24" />
+      </button>
+      <div className="hidden lg:block">
         <div>
           <img src={Avatar} alt="Sergey'blog Avatar" className="w-40 h-40 rounded-full mb-4 mx-auto object-cover" />
           <div className="text-sm mb-4">
@@ -45,15 +48,15 @@ const Header = () => (
         </ul>
 
         <hr className="my-4" />
+        <ul className="text-left">
+          {LINKS.map((link) => (
+            <li key={link.name}>
+              <Link activeClassName="text-gray-300 font-bold" className="py-1 block" to={link.url}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
-      <ul className="text-left">
-        {LINKS.map((link) => (
-          <li key={link.name}>
-            <Link activeClassName="text-gray-300 font-bold" className="py-1 block" to={link.url}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
     </nav>
   </header>
 );
